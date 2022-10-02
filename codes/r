@@ -1,0 +1,6 @@
+#!/bin/env bash
+code=${1}
+#File to run c++ code
+exe="${code:0:-4}"
+g++ "$code" -o "$exe"
+./"$exe"
